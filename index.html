@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Birthday Girl ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hearts"></div>
+
+<!-- Birthday soundtrack supplied by the website creator. -->
+<audio id="birthdaySong" autoplay preload="auto">
+  <source src="audio/Perfect.mp3" type="audio/mpeg">
+</audio>
+<button class="music" id="musicBtn" onclick="toggleMusic()">♫ <span>Music</span></button>
+
+<main>
+<section class="page active hero" data-page="0">
+  <div class="moon"></div><div class="glow"></div>
+  <div class="hero-animal panda">🐼</div><div class="hero-animal turtle">🐢</div>
+  <div class="hero-card">
+    <div class="tiny-label">A little world made just for you</div>
+    <p class="eyebrow">FOR THE MOST SPECIAL GIRL</p>
+    <h1>Happy<br><span>Birthday</span></h1>
+    <div class="script">My Birthday Girl ♡</div>
+    <p class="date">Ashoj 14, 2063 · Your 20th Birthday</p>
+    <button class="next" onclick="goTo(1); startMusic()">Open your surprise <b>→</b></button>
+  </div>
+  <div class="hint">there's a whole little world waiting for you ↓</div>
+</section>
+
+<section class="page cartoon" data-page="1">
+ <div class="inner">
+  <p class="eyebrow">CHAPTER ONE</p><h2>Before anything else…</h2>
+  <p class="sub">I wanted to make you smile first. ♡</p>
+  <div class="scene">
+    <div class="cloud c1">☁️</div><div class="cloud c2">☁️</div>
+    <div class="star s1">✦</div><div class="star s2">✧</div><div class="star s3">✦</div>
+    <div class="animal a1">🐼<small>hi birthday girl!</small></div>
+    <div class="animal a2">🐢<small>you are loved ♡</small></div>
+    <div class="animal a3">🐰<small>20 looks cute on you!</small></div>
+    <div class="gift">🎁</div><div class="balloon b1">🎈</div><div class="balloon b2">🎈</div>
+  </div>
+  <p class="fun">you will have an unreasonable amount of cuteness.</p>
+  <button class="next" onclick="goTo(2)">Now, your memories <b>→</b></button>
+ </div>
+</section>
+
+<section class="page photos" data-page="2">
+ <div class="inner wide">
+  <p class="eyebrow">CHAPTER TWO</p>
+  <h2>Four little pieces of you</h2>
+  <p class="sub">you and me against whole world. ♡</p>
+  <div class="photo-grid">
+    <article class="photo-card p1"><div class="photo-frame"><img src="images/photo1.jpeg" alt="Birthday girl memory 1"></div><div class="caption">the smile I could never get tired of</div></article>
+    <article class="photo-card p2"><div class="photo-frame"><img src="images/photo2.jpeg" alt="Birthday girl memory 2"></div><div class="caption">beautiful in every little moment</div></article>
+    <article class="photo-card p3"><div class="photo-frame"><img src="images/photo3.jpeg" alt="Birthday girl memory 3"></div><div class="caption">elegance, softness &amp; you</div></article>
+    <article class="photo-card p4"><div class="photo-frame"><img src="images/photo4.jpeg" alt="Couple memory"></div><div class="caption">and my favourite one: us ♡</div></article>
+  </div>
+  <button class="next" onclick="goTo(3)">There's something I want to tell you <b>→</b></button>
+ </div>
+</section>
+
+<section class="page letter-page" data-page="3">
+ <div class="inner letter-wrap">
+  <p class="eyebrow">CHAPTER THREE</p>
+  <div class="letter">
+   <div class="heartmark">♡</div><h2>To my beautiful girl,</h2>
+   <div class="letter-text">
+    <p>Happy 20th birthday, my love. Today isn't just another birthday. It is a celebration of the beautiful person you have become and every little moment that has made you who you are.</p>
+    <p>There are so many things I could say about you, but somehow words always feel too small. I love your smile, the way you laugh, the little things you do without even noticing, and the way you can make an ordinary day feel special just by being there.</p>
+    <p>On your birthday, I hope you remember how precious you are. I hope this new chapter brings you beautiful memories, peaceful days, exciting dreams and all the happiness your heart can hold.</p>
+    <p>Thank you for being a part of my life. Thank you for every conversation, every laugh, every silly moment, every difficult moment we got through, and every memory that I will always keep close to my heart.</p>
+    <p>And if life ever feels difficult, I hope you remember this: you never have to face everything alone. I will always be cheering for you, believing in you, and wanting to see you happy.</p>
+    <p class="signature">Forever admiring you,<br><strong>your Nishu ♡</strong></p>
+   </div>
+  </div>
+  <button class="next" onclick="goTo(4)">One more little surprise <b>→</b></button>
+ </div>
+</section>
+
+<section class="page memories" data-page="4">
+ <div class="inner">
+  <p class="eyebrow">CHAPTER FOUR</p><h2>Things I hope you never forget</h2>
+  <div class="memory-list">
+   <div class="memory"><span>01</span><div><b>You are enough.</b><p>You don't have to be perfect to be deeply loved.</p></div></div>
+   <div class="memory"><span>02</span><div><b>Your dreams matter.</b><p>Keep chasing the life that makes your heart happy.</p></div></div>
+   <div class="memory"><span>03</span><div><b>Your smile is magic.</b><p>I wanna see you smile forever.</p></div></div>
+   <div class="memory"><span>04</span><div><b>You are my favourite person.</b><p>And yes, I will probably remind you of that forever.</p></div></div>
+  </div>
+  <div class="couple">🐼 <span>+</span> 🐢</div>
+  <button class="next" onclick="goTo(5)">The final page ♡ <b>→</b></button>
+ </div>
+</section>
+
+<section class="page final" data-page="5">
+ <div class="final-content">
+  <div class="crown">👑</div><p class="eyebrow">CHAPTER FIVE · </p>
+  <h2>Happy 20th,<br><span>cutiee.</span></h2>
+  <p class="final-message">May 20 be the beginning of your most beautiful chapter yet.</p>
+  <div class="cake">🎂</div>
+  <p class="wish">Make a wish. Close your eyes.<br>And know that your man is wishing for your happiness too. ♡</p>
+  <button class="restart" onclick="goTo(0)">↻ Start again</button>
+ </div>
+</section>
+</main>
+
+<div class="progress"><i class="active"></i><i></i><i></i><i></i><i></i><i></i></div>
+<script src="script.js"></script>
+</body>
+</html>
